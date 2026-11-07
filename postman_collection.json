@@ -13,7 +13,7 @@
     },
     {
       "key": "cardId",
-      "value": "a6a7d1be-8885-44ca-9dab-9aa655d1580e",
+      "value": "brac-visa-infinite",
       "type": "string"
     }
   ],
@@ -75,7 +75,7 @@
       "response": []
     },
     {
-      "name": "2. Get Card Change History",
+      "name": "2. Get Card Change History (by Slug or UUID)",
       "event": [
         {
           "listen": "test",
@@ -114,7 +114,82 @@
       "response": []
     },
     {
-      "name": "3. Trigger Daily Monitoring Job",
+      "name": "3. Get Approved Cards Diagnostic List",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Returns array of approved card values\", function () {",
+              "    var json = pm.response.json();",
+              "    pm.expect(json).to.be.an('array');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/cards/approved",
+          "host": ["{{baseUrl}}"],
+          "path": ["cards", "approved"]
+        },
+        "description": "Diagnostic endpoint returning raw card values and approval status."
+      },
+      "response": []
+    },
+    {
+      "name": "4. Get Monitoring Status",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Returns monitoring status envelope\", function () {",
+              "    var json = pm.response.json();",
+              "    pm.expect(json).to.have.property('success');",
+              "    pm.expect(json).to.have.property('data');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/monitoring/status",
+          "host": ["{{baseUrl}}"],
+          "path": ["monitoring", "status"]
+        },
+        "description": "Returns execution summary of the latest monitoring job."
+      },
+      "response": []
+    },
+    {
+      "name": "5. Trigger Daily Monitoring Job",
       "event": [
         {
           "listen": "test",
@@ -153,34 +228,7 @@
       "response": []
     },
     {
-      "name": "4. Error Test - Invalid UUID (400)",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "pm.test(\"Status code is 400\", function () {",
-              "    pm.response.to.have.status(400);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "{{baseUrl}}/cards/not-a-valid-uuid/history",
-          "host": ["{{baseUrl}}"],
-          "path": ["cards", "not-a-valid-uuid", "history"]
-        },
-        "description": "Tests validation pipe rejection for non-UUID parameter."
-      },
-      "response": []
-    },
-    {
-      "name": "5. Error Test - Non-Existent Card (404)",
+      "name": "6. Error Test - Non-Existent Card (404)",
       "event": [
         {
           "listen": "test",
@@ -198,11 +246,11 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/cards/00000000-0000-0000-0000-000000000000/history",
+          "raw": "{{baseUrl}}/cards/non-existent-card-slug/history",
           "host": ["{{baseUrl}}"],
-          "path": ["cards", "00000000-0000-0000-0000-000000000000", "history"]
+          "path": ["cards", "non-existent-card-slug", "history"]
         },
-        "description": "Tests 404 response when a card UUID is syntactically valid but does not exist in the database."
+        "description": "Tests 404 response when a card identifier does not exist in the database."
       },
       "response": []
     }
