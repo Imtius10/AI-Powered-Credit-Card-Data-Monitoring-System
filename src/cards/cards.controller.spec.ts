@@ -10,12 +10,14 @@ describe('CardsController', () => {
   let controller: CardsController;
   let service: {
     getCardsResponse: jest.Mock;
+    getApprovedCards: jest.Mock;
     getCardHistory: jest.Mock;
   };
 
   beforeEach(async () => {
     service = {
       getCardsResponse: jest.fn(),
+      getApprovedCards: jest.fn(),
       getCardHistory: jest.fn(),
     };
 
@@ -67,6 +69,14 @@ describe('CardsController', () => {
     const result = await controller.getCards();
     expect(result).toEqual(mockResponse);
     expect(service.getCardsResponse).toHaveBeenCalledTimes(1);
+  });
+
+  it('GET /cards/approved returns raw approved cards list', async () => {
+    service.getApprovedCards.mockResolvedValue([]);
+
+    const result = await controller.getApproved();
+    expect(result).toEqual([]);
+    expect(service.getApprovedCards).toHaveBeenCalledTimes(1);
   });
 
   it('GET /cards/:id/history delegates to cardsService.getCardHistory', async () => {

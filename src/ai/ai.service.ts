@@ -9,9 +9,8 @@ import {
 } from '../cards/card.types';
 import { focusCardContent } from '../common/content-focuser';
 import {
-  cardVerificationSchema,
   parseExtractionJson,
-  parseJsonObject,
+  parseVerificationJson,
 } from './ai.schemas';
 import {
   AI_SYSTEM_PROMPT,
@@ -98,8 +97,7 @@ export class AiService {
     });
 
     try {
-      const parsed = parseJsonObject(response.text);
-      const data = cardVerificationSchema.parse(parsed);
+      const data = parseVerificationJson(response.text);
       const usage = this.toUsage(response);
 
       this.logger.log(

@@ -55,9 +55,3 @@ export function evidenceContainsValue(
 
   return valueDigits.every((digit) => evidenceDigits.has(digit));
 }
-
-export function isZeroValue(value: string): boolean {
-  return /(?:^|[^\d])0(?:\.0+)?(?:\s*%|\s*(?:bdt|usd))?$/.test(
-    normalizeForComparison(value).replace(/\s+/g, ' ').trim(),
-  );
-}
