@@ -1,14 +1,14 @@
 {
   "card": {
-    "id": "ec3dbb19-e581-4baa-800a-a816027addc9",
+    "id": "81b35868-ddb8-43db-9753-6f5edf9944da",
     "slug": "brac-visa-infinite",
     "name": "BRAC Bank Visa Infinite Credit Card",
     "issuer": "BRAC Bank PLC"
   },
   "observations": [
     {
-      "observationId": "2e740d00-14e0-4699-8fd4-97dbc14a479d",
-      "observedAt": "2026-11-07T07:00:43.731Z",
+      "observationId": "6debd8be-64e4-4a2a-93fb-8d717b5e10a7",
+      "observedAt": "2026-11-07T10:45:00.479Z",
       "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
       "sourceMode": "fixture",
       "verificationStatus": "verified",
@@ -170,7 +170,7 @@
             "inputTokens": 754,
             "outputTokens": 247,
             "estimatedCostUsd": 0,
-            "durationMs": 0
+            "durationMs": 1
           },
           "verification": {
             "provider": "deterministic-verifier",
@@ -184,7 +184,7 @@
       },
       "changes": [
         {
-          "changeId": "e4087cb7-1505-4023-b46b-96d9e37a27c9",
+          "changeId": "1df7b397-b845-4ea7-a1ba-79b8fe2a2782",
           "field": "cardName",
           "oldValue": null,
           "newValue": "BRAC Bank Visa Infinite Credit Card",
@@ -192,7 +192,7 @@
           "evidence": "Card: BRAC Bank Visa Infinite Credit Card"
         },
         {
-          "changeId": "8a527e95-ae3c-4509-aae0-709388c50867",
+          "changeId": "d75e5054-8fa4-4d2b-90d8-d637f7bed6ac",
           "field": "issuer",
           "oldValue": null,
           "newValue": "BRAC Bank PLC",
@@ -200,7 +200,7 @@
           "evidence": "Issuer: BRAC Bank PLC"
         },
         {
-          "changeId": "e8da03f2-7937-4d25-bb56-372af94c265e",
+          "changeId": "17f5d69e-15e5-4d71-9d84-be7ec4cb4ebe",
           "field": "purchaseApr",
           "oldValue": null,
           "newValue": "25%",
@@ -208,7 +208,7 @@
           "evidence": "Annual Interest Rates: 25%"
         },
         {
-          "changeId": "8cdb7897-e2ad-4197-ac8b-72d7bc75d3a5",
+          "changeId": "ffb8ffa7-f3b9-4c53-b31b-3b1c939cdf29",
           "field": "annualFee",
           "oldValue": null,
           "newValue": "TK. 20,000",
@@ -216,7 +216,7 @@
           "evidence": "Annual Fee- Primary Card: TK. 20,000"
         },
         {
-          "changeId": "d1605ee5-4a1a-4c91-975e-5b5d984e164f",
+          "changeId": "cc1f318a-9775-4da1-a6da-73ce28edd810",
           "field": "otherFees",
           "oldValue": null,
           "newValue": "TK. 1,000",
@@ -224,7 +224,7 @@
           "evidence": "Late Payment Charges: TK. 1,000"
         },
         {
-          "changeId": "b39f0706-2fb8-4236-b4a0-37fcb3b0d2eb",
+          "changeId": "235fd139-2f32-4e4b-8408-99731bed736e",
           "field": "welcomeBonus",
           "oldValue": null,
           "newValue": "Curated Exclusive Welcome Vouchers",
@@ -232,7 +232,7 @@
           "evidence": "Curated Exclusive Welcome Vouchers"
         },
         {
-          "changeId": "70449e8a-01a3-4dff-859c-5c126992e759",
+          "changeId": "c5d4126b-c2b2-4924-ad2f-ce7ae1708e02",
           "field": "rewardsAndBenefits",
           "oldValue": null,
           "newValue": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
@@ -240,7 +240,7 @@
           "evidence": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card"
         },
         {
-          "changeId": "eb6f53a3-16c8-4d1f-8d8f-c0bad5dfe03e",
+          "changeId": "afa1d240-183c-4314-ae10-8539a81d18d8",
           "field": "restrictions",
           "oldValue": null,
           "newValue": "Please note, the Visa Infinite credit card is an Invite-only credit card",
@@ -250,8 +250,8 @@
       ]
     },
     {
-      "observationId": "c9762417-233c-4add-9534-e1fda9fb5b5c",
-      "observedAt": "2026-11-07T07:00:43.731Z",
+      "observationId": "7b3a4729-929f-4c69-b665-83c0d1e6450e",
+      "observedAt": "2026-11-07T10:45:00.479Z",
       "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
       "sourceMode": "fixture",
       "verificationStatus": "verified",
@@ -413,7 +413,7 @@
             "inputTokens": 754,
             "outputTokens": 247,
             "estimatedCostUsd": 0,
-            "durationMs": 1
+            "durationMs": 0
           },
           "verification": {
             "provider": "deterministic-verifier",
@@ -427,7 +427,7 @@
       },
       "changes": [
         {
-          "changeId": "8dd7c845-8d2d-42ba-9952-93f3c3d22436",
+          "changeId": "d4f0362d-050e-4401-b88d-6a77d1e05813",
           "field": "annualFee",
           "oldValue": "TK. 20,000",
           "newValue": "TK. 22,000",

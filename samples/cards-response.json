@@ -2,7 +2,7 @@
   "success": true,
   "data": [
     {
-      "id": "ec3dbb19-e581-4baa-800a-a816027addc9",
+      "id": "81b35868-ddb8-43db-9753-6f5edf9944da",
       "name": "BRAC Bank Visa Infinite Credit Card",
       "issuer": "BRAC Bank PLC",
       "purchaseApr": {
@@ -23,10 +23,10 @@
       ],
       "introApr": null,
       "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
-      "lastVerifiedAt": "2026-11-07T07:00:43.705Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.450Z"
     },
     {
-      "id": "f47d5f74-fca7-4f98-8b47-10697904b5c6",
+      "id": "e02ef57d-a0bc-41b5-84c3-22111aec3d87",
       "name": "BRAC Bank Visa Signature Credit Card",
       "issuer": "BRAC Bank PLC",
       "purchaseApr": {
@@ -55,10 +55,10 @@
       ],
       "introApr": null,
       "sourceUrl": "https://www.bracbank.com/en/retail/card/signature-card",
-      "lastVerifiedAt": "2026-11-07T07:00:43.706Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.451Z"
     },
     {
-      "id": "3aab36b3-e0d4-46c2-b3b4-056b245b14ca",
+      "id": "1e985271-bc6d-4503-9763-1b256fcc3e4e",
       "name": "BRAC Bank Platinum Credit Card",
       "issuer": "BRAC Bank PLC",
       "purchaseApr": {
@@ -79,10 +79,10 @@
       ],
       "introApr": null,
       "sourceUrl": "https://www.bracbank.com/en/retail/card/platinum-card",
-      "lastVerifiedAt": "2026-11-07T07:00:43.707Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.451Z"
     },
     {
-      "id": "7acfb51b-7b8b-42ab-b845-494dcae182ce",
+      "id": "a68f89ca-fb20-4153-a0bd-88bbd61ab707",
       "name": "BRAC Bank Mastercard Millennial Titanium Credit Card",
       "issuer": "BRAC Bank PLC",
       "purchaseApr": {
@@ -103,10 +103,10 @@
       ],
       "introApr": null,
       "sourceUrl": "https://www.bracbank.com/en/retail/card/millennial-mastercard-titanium",
-      "lastVerifiedAt": "2026-11-07T07:00:43.707Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.452Z"
     },
     {
-      "id": "28b81f53-b3a6-46e6-bf37-16db765837f0",
+      "id": "7ffea36d-7630-4ccb-8ab8-a0f8e2b37b28",
       "name": "EBL Visa Platinum Credit Card",
       "issuer": "Eastern Bank PLC",
       "purchaseApr": null,
@@ -121,10 +121,10 @@
       ],
       "introApr": null,
       "sourceUrl": "https://www.ebl.com.bd/retail/eblcard/EBL-VISA-Platinum-Credit-Card",
-      "lastVerifiedAt": "2026-11-07T07:00:43.708Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.452Z"
     },
     {
-      "id": "85aec55d-00eb-4439-ad4c-e20222d13af8",
+      "id": "a5cdf60e-7028-45f2-a02e-892276558d54",
       "name": "EBL Visa Gold Credit Card",
       "issuer": "Eastern Bank PLC",
       "purchaseApr": null,
@@ -139,10 +139,10 @@
       ],
       "introApr": null,
       "sourceUrl": "https://www.ebl.com.bd/retail/eblcard/EBL-VISA-Gold-Credit-Card",
-      "lastVerifiedAt": "2026-11-07T07:00:43.709Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.453Z"
     },
     {
-      "id": "e8d52051-3344-4375-be09-02ca2eb6d518",
+      "id": "e94af964-c4a2-45ad-a37a-6ee87981a56a",
       "name": "EBL Visa Classic Credit Card",
       "issuer": "Eastern Bank PLC",
       "purchaseApr": null,
@@ -157,10 +157,10 @@
       ],
       "introApr": null,
       "sourceUrl": "https://www.ebl.com.bd/retail/eblcard/EBL-Visa-Classic-Credit-Card",
-      "lastVerifiedAt": "2026-11-07T07:00:43.709Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.453Z"
     },
     {
-      "id": "bf8fff6c-b4ce-47ec-8077-64c308a53423",
+      "id": "b55ef3a2-9727-491a-8111-8023a65ea0bd",
       "name": "City Bank Visa Platinum Credit Card",
       "issuer": "The City Bank PLC",
       "purchaseApr": {
@@ -176,10 +176,10 @@
       "rewards": [],
       "introApr": null,
       "sourceUrl": "https://www.citybankplc.com/p/visa-platinum",
-      "lastVerifiedAt": "2026-11-07T07:00:43.709Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.454Z"
     },
     {
-      "id": "5ef098e3-cbe0-47ad-adfa-de66d41a4b7d",
+      "id": "109f0b9b-3405-4d1d-af78-91ee87305248",
       "name": "City Bank Visa Infinite Credit Card",
       "issuer": "The City Bank PLC",
       "purchaseApr": {
@@ -195,10 +195,10 @@
       "rewards": [],
       "introApr": null,
       "sourceUrl": "https://www.citybankplc.com/p-ca/visa-infinite",
-      "lastVerifiedAt": "2026-11-07T07:00:43.710Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.455Z"
     },
     {
-      "id": "f24d41dc-2bdc-41c2-bb91-cef48808b058",
+      "id": "8d5dba46-d88b-4e51-aaa5-12db1b986cab",
       "name": "City Bank American Express Platinum Credit Card",
       "issuer": "The City Bank PLC",
       "purchaseApr": {
@@ -214,10 +214,10 @@
       "rewards": [],
       "introApr": null,
       "sourceUrl": "https://www.citybankplc.com/p-ca/amex-platinum-credit-card",
-      "lastVerifiedAt": "2026-11-07T07:00:43.710Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.456Z"
     },
     {
-      "id": "ea071c76-4235-45f9-87c5-bc0dcd0c5029",
+      "id": "7306b854-3a09-4283-878e-7b3c780860b8",
       "name": "UCB Visa Platinum Card",
       "issuer": "United Commercial Bank PLC",
       "purchaseApr": null,
@@ -235,7 +235,7 @@
         "durationMonths": 24
       },
       "sourceUrl": "https://www.ucb.com.bd/cards/choose-your-card/visa-platinum-card/",
-      "lastVerifiedAt": "2026-11-07T07:00:43.711Z"
+      "lastVerifiedAt": "2026-11-07T10:45:00.457Z"
     }
   ],
   "meta": {
