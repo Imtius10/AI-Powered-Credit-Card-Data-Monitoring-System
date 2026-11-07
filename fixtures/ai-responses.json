@@ -1,0 +1,1184 @@
+{
+  "brac-visa-infinite": {
+    "extract": {
+      "cardName": "BRAC Bank Visa Infinite Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": null,
+      "annualFee": "TK. 20,000",
+      "otherFees": "TK. 1,000",
+      "welcomeBonus": "Curated Exclusive Welcome Vouchers",
+      "rewardsAndBenefits": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+      "introductoryApr": null,
+      "restrictions": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+      "evidence": {
+        "cardName": "Card: BRAC Bank Visa Infinite Credit Card",
+        "issuer": "Issuer: BRAC Bank PLC",
+        "purchaseApr": "Annual Interest Rates: 25%",
+        "annualFee": "Annual Fee- Primary Card: TK. 20,000",
+        "otherFees": "Late Payment Charges: TK. 1,000",
+        "welcomeBonus": "Curated Exclusive Welcome Vouchers",
+        "rewardsAndBenefits": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+        "restrictions": "Please note, the Visa Infinite credit card is an Invite-only credit card"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "BRAC Bank Visa Infinite Credit Card",
+          "evidence": "Card: BRAC Bank Visa Infinite Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "BRAC Bank PLC",
+          "evidence": "Issuer: BRAC Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": "25%",
+          "evidence": "Annual Interest Rates: 25%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "TK. 20,000",
+          "evidence": "Annual Fee- Primary Card: TK. 20,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": "TK. 1,000",
+          "evidence": "Late Payment Charges: TK. 1,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": "Curated Exclusive Welcome Vouchers",
+          "evidence": "Curated Exclusive Welcome Vouchers",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+          "evidence": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+          "evidence": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "brac-visa-signature": {
+    "extract": {
+      "cardName": "BRAC Bank Visa Signature Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": null,
+      "annualFee": "TK. 10,000",
+      "otherFees": "TK. 1,000",
+      "welcomeBonus": "Receive 5,000 Bonus Reward Points with a minimum cumulative spend of BDT 50,000 within the first 2 months of issuance (Only newly issued credit cards)",
+      "rewardsAndBenefits": "Enjoy Welcome Vouchers from prominent dine-in, Lifestyle, and Healthcare Partners.",
+      "introductoryApr": null,
+      "restrictions": "Only newly issued credit cards",
+      "evidence": {
+        "cardName": "Card: BRAC Bank Visa Signature Credit Card",
+        "issuer": "Issuer: BRAC Bank PLC",
+        "purchaseApr": "Annual Interest Rates: 25%",
+        "annualFee": "Annual Fee- Primary Card: TK. 10,000",
+        "otherFees": "Late Payment Charges: TK. 1,000",
+        "welcomeBonus": "Receive 5,000 Bonus Reward Points with a minimum cumulative spend of BDT 50,000 within the first 2 months of issuance (Only newly issued credit cards)",
+        "rewardsAndBenefits": "Enjoy Welcome Vouchers from prominent dine-in, Lifestyle, and Healthcare Partners.",
+        "restrictions": "Receive 5,000 Bonus Reward Points with a minimum cumulative spend of BDT 50,000 within the first 2 months of issuance (Only newly issued credit cards)"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "BRAC Bank Visa Signature Credit Card",
+          "evidence": "Card: BRAC Bank Visa Signature Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "BRAC Bank PLC",
+          "evidence": "Issuer: BRAC Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": "25%",
+          "evidence": "Annual Interest Rates: 25%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "TK. 10,000",
+          "evidence": "Annual Fee- Primary Card: TK. 10,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": "TK. 1,000",
+          "evidence": "Late Payment Charges: TK. 1,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": "Receive 5,000 Bonus Reward Points with a minimum cumulative spend of BDT 50,000 within the first 2 months of issuance (Only newly issued credit cards)",
+          "evidence": "Receive 5,000 Bonus Reward Points with a minimum cumulative spend of BDT 50,000 within the first 2 months of issuance (Only newly issued credit cards)",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "Enjoy Welcome Vouchers from prominent dine-in, Lifestyle, and Healthcare Partners.",
+          "evidence": "Enjoy Welcome Vouchers from prominent dine-in, Lifestyle, and Healthcare Partners.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "Only newly issued credit cards",
+          "evidence": "Receive 5,000 Bonus Reward Points with a minimum cumulative spend of BDT 50,000 within the first 2 months of issuance (Only newly issued credit cards)",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "brac-visa-platinum": {
+    "extract": {
+      "cardName": "BRAC Bank Platinum Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": null,
+      "annualFee": "TK. 5,000",
+      "otherFees": "TK. 600",
+      "welcomeBonus": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points. (Only for first-time activation)",
+      "rewardsAndBenefits": "Credit Shield Insurance",
+      "introductoryApr": null,
+      "restrictions": "Issuance of new Platinum Credit Card is discontinued",
+      "evidence": {
+        "cardName": "Card: BRAC Bank Platinum Credit Card",
+        "issuer": "Issuer: BRAC Bank PLC",
+        "purchaseApr": "Annual Interest Rates: 25%",
+        "annualFee": "Annual Fee- Primary Card: TK. 5,000",
+        "otherFees": "Late Payment Charges: TK. 600",
+        "welcomeBonus": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points. (Only for first-time activation)",
+        "rewardsAndBenefits": "Credit Shield Insurance",
+        "restrictions": "Issuance of new Platinum Credit Card is discontinued"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "BRAC Bank Platinum Credit Card",
+          "evidence": "Card: BRAC Bank Platinum Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "BRAC Bank PLC",
+          "evidence": "Issuer: BRAC Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": "25%",
+          "evidence": "Annual Interest Rates: 25%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "TK. 5,000",
+          "evidence": "Annual Fee- Primary Card: TK. 5,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": "TK. 600",
+          "evidence": "Late Payment Charges: TK. 600",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points. (Only for first-time activation)",
+          "evidence": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points. (Only for first-time activation)",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "Credit Shield Insurance",
+          "evidence": "Credit Shield Insurance",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "Issuance of new Platinum Credit Card is discontinued",
+          "evidence": "Issuance of new Platinum Credit Card is discontinued",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "brac-mastercard-millennial-titanium": {
+    "extract": {
+      "cardName": "BRAC Bank Mastercard Millennial Titanium Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": null,
+      "annualFee": "TK. 3,000",
+      "otherFees": "TK. 600",
+      "welcomeBonus": "Enjoy Welcome Vouchers from prominent dine-in and lifestyle merchants.",
+      "rewardsAndBenefits": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points (Only for first-time activation)",
+      "introductoryApr": null,
+      "restrictions": "Only for first-time activation",
+      "evidence": {
+        "cardName": "Card: BRAC Bank Mastercard Millennial Titanium Credit Card",
+        "issuer": "Issuer: BRAC Bank PLC",
+        "purchaseApr": "Annual Interest Rates: 25%",
+        "annualFee": "Annual Fee- Primary Card: TK. 3,000",
+        "otherFees": "Late Payment Charges: TK. 600",
+        "welcomeBonus": "Enjoy Welcome Vouchers from prominent dine-in and lifestyle merchants.",
+        "rewardsAndBenefits": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points (Only for first-time activation)",
+        "restrictions": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points (Only for first-time activation)"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "BRAC Bank Mastercard Millennial Titanium Credit Card",
+          "evidence": "Card: BRAC Bank Mastercard Millennial Titanium Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "BRAC Bank PLC",
+          "evidence": "Issuer: BRAC Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": "25%",
+          "evidence": "Annual Interest Rates: 25%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "TK. 3,000",
+          "evidence": "Annual Fee- Primary Card: TK. 3,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": "TK. 600",
+          "evidence": "Late Payment Charges: TK. 600",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": "Enjoy Welcome Vouchers from prominent dine-in and lifestyle merchants.",
+          "evidence": "Enjoy Welcome Vouchers from prominent dine-in and lifestyle merchants.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points (Only for first-time activation)",
+          "evidence": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points (Only for first-time activation)",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "Only for first-time activation",
+          "evidence": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points (Only for first-time activation)",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "ebl-visa-platinum": {
+    "extract": {
+      "cardName": "EBL Visa Platinum Credit Card",
+      "issuer": "Eastern Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": "Zero Renewal Fee if you transact for 24-times in a year",
+      "otherFees": null,
+      "welcomeBonus": null,
+      "rewardsAndBenefits": "EBL SKYCOINS",
+      "introductoryApr": null,
+      "restrictions": "Conditions Apply",
+      "evidence": {
+        "cardName": "EBL Visa Platinum Credit Card",
+        "issuer": "Eastern Bank PLC.",
+        "annualFee": "EBL Platinum Credit Card comes with an offer where you do not need to pay any Renewal Fee if you transact for 24-times in a year.",
+        "rewardsAndBenefits": "EBL SKYCOINS",
+        "restrictions": "Conditions Apply"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "EBL Visa Platinum Credit Card",
+          "evidence": "EBL Visa Platinum Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "Eastern Bank PLC",
+          "evidence": "Eastern Bank PLC.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "Zero Renewal Fee if you transact for 24-times in a year",
+          "evidence": "EBL Platinum Credit Card comes with an offer where you do not need to pay any Renewal Fee if you transact for 24-times in a year.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "EBL SKYCOINS",
+          "evidence": "EBL SKYCOINS",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "Conditions Apply",
+          "evidence": "Conditions Apply",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "ebl-visa-gold": {
+    "extract": {
+      "cardName": "EBL Visa Gold Credit Card",
+      "issuer": "Eastern Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": "Zero Renewal Fee if you perform 24 transactions in a year",
+      "otherFees": null,
+      "welcomeBonus": null,
+      "rewardsAndBenefits": "EBL ZIP",
+      "introductoryApr": null,
+      "restrictions": "The first supplementary card is free per client",
+      "evidence": {
+        "cardName": "EBL Visa Gold Credit Card",
+        "issuer": "Eastern Bank PLC.",
+        "annualFee": "EBL Gold Credit Cards come with a unique offer where you do not need to pay the Renewal Fee if you perform 24 transactions in a year.",
+        "rewardsAndBenefits": "EBL ZIP",
+        "restrictions": "The first supplementary card is free per client"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "EBL Visa Gold Credit Card",
+          "evidence": "EBL Visa Gold Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "Eastern Bank PLC",
+          "evidence": "Eastern Bank PLC.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "Zero Renewal Fee if you perform 24 transactions in a year",
+          "evidence": "EBL Gold Credit Cards come with a unique offer where you do not need to pay the Renewal Fee if you perform 24 transactions in a year.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "EBL ZIP",
+          "evidence": "EBL ZIP",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "The first supplementary card is free per client",
+          "evidence": "The first supplementary card is free per client",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "ebl-visa-classic": {
+    "extract": {
+      "cardName": "EBL Visa Classic Credit Card",
+      "issuer": "Eastern Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": "Zero Renewal Fee if you perform 24 transactions in a year",
+      "otherFees": null,
+      "welcomeBonus": null,
+      "rewardsAndBenefits": "EBL ZIP",
+      "introductoryApr": null,
+      "restrictions": "The first supplementary card is free per client",
+      "evidence": {
+        "cardName": "EBL Visa Classic Credit Card",
+        "issuer": "Eastern Bank PLC.",
+        "annualFee": "EBL Classic Credit Cards come with a unique offer where you do not need to pay the Renewal Fee if you perform 24 transactions in a year.",
+        "rewardsAndBenefits": "EBL ZIP",
+        "restrictions": "The first supplementary card is free per client"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "EBL Visa Classic Credit Card",
+          "evidence": "EBL Visa Classic Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "Eastern Bank PLC",
+          "evidence": "Eastern Bank PLC.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "Zero Renewal Fee if you perform 24 transactions in a year",
+          "evidence": "EBL Classic Credit Cards come with a unique offer where you do not need to pay the Renewal Fee if you perform 24 transactions in a year.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "EBL ZIP",
+          "evidence": "EBL ZIP",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "The first supplementary card is free per client",
+          "evidence": "The first supplementary card is free per client",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "city-bank-visa-platinum": {
+    "extract": {
+      "cardName": "City Bank Visa Platinum Credit Card",
+      "issuer": "The City Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": "10.99%",
+      "annualFee": "BDT 3,000",
+      "otherFees": "BDT 850",
+      "welcomeBonus": null,
+      "rewardsAndBenefits": null,
+      "introductoryApr": null,
+      "restrictions": "15% VAT will be charged as applicable",
+      "evidence": {
+        "cardName": "Card: City Bank Visa Platinum Credit Card",
+        "issuer": "Issuer: The City Bank PLC",
+        "purchaseApr": "Interest Rate (Purchase & Cash Advance)4 (Annual) 25%",
+        "balanceTransferApr": "Balance Transfer Interest Rate (Annual) 10.99%",
+        "annualFee": "Annual Fee1 BDT 3,000",
+        "otherFees": "Late Payment Fee BDT 850",
+        "restrictions": "15% VAT will be charged as applicable"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "City Bank Visa Platinum Credit Card",
+          "evidence": "Card: City Bank Visa Platinum Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "The City Bank PLC",
+          "evidence": "Issuer: The City Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": "25%",
+          "evidence": "Interest Rate (Purchase & Cash Advance)4 (Annual) 25%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": "10.99%",
+          "evidence": "Balance Transfer Interest Rate (Annual) 10.99%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "annualFee",
+          "value": "BDT 3,000",
+          "evidence": "Annual Fee1 BDT 3,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": "BDT 850",
+          "evidence": "Late Payment Fee BDT 850",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "15% VAT will be charged as applicable",
+          "evidence": "15% VAT will be charged as applicable",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "city-bank-visa-infinite": {
+    "extract": {
+      "cardName": "City Bank Visa Infinite Credit Card",
+      "issuer": "The City Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": "10.99%",
+      "annualFee": "BDT 10,000",
+      "otherFees": "BDT 1000",
+      "welcomeBonus": null,
+      "rewardsAndBenefits": null,
+      "introductoryApr": null,
+      "restrictions": "15% VAT will be charged as applicable",
+      "evidence": {
+        "cardName": "Card: City Bank Visa Infinite Credit Card",
+        "issuer": "Issuer: The City Bank PLC",
+        "purchaseApr": "Interest Rate (Purchase & Cash Advance)4 (Annual) 25%",
+        "balanceTransferApr": "Balance Transfer Interest Rate (Annual) 10.99%",
+        "annualFee": "Annual Fee1 BDT 10,000",
+        "otherFees": "Late Payment Fee BDT 1000",
+        "restrictions": "15% VAT will be charged as applicable"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "City Bank Visa Infinite Credit Card",
+          "evidence": "Card: City Bank Visa Infinite Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "The City Bank PLC",
+          "evidence": "Issuer: The City Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": "25%",
+          "evidence": "Interest Rate (Purchase & Cash Advance)4 (Annual) 25%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": "10.99%",
+          "evidence": "Balance Transfer Interest Rate (Annual) 10.99%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "annualFee",
+          "value": "BDT 10,000",
+          "evidence": "Annual Fee1 BDT 10,000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": "BDT 1000",
+          "evidence": "Late Payment Fee BDT 1000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "15% VAT will be charged as applicable",
+          "evidence": "15% VAT will be charged as applicable",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "city-bank-amex-platinum": {
+    "extract": {
+      "cardName": "City Bank American Express Platinum Credit Card",
+      "issuer": "The City Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": "10.99%",
+      "annualFee": "BDT 27,500",
+      "otherFees": "BDT 1000",
+      "welcomeBonus": null,
+      "rewardsAndBenefits": null,
+      "introductoryApr": null,
+      "restrictions": "15% VAT will be charged as applicable",
+      "evidence": {
+        "cardName": "Card: City Bank American Express Platinum Credit Card",
+        "issuer": "Issuer: The City Bank PLC",
+        "purchaseApr": "Interest Rate(Purchase & Cash Advance)5 (Annual) 25%",
+        "balanceTransferApr": "Balance Transfer Interest Rate (Annual) 10.99%",
+        "annualFee": "American Express Platinum column: 1st Year Annual Fee BDT 27,500",
+        "otherFees": "Late Payment Charge BDT 1000",
+        "restrictions": "15% VAT will be charged as applicable"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "City Bank American Express Platinum Credit Card",
+          "evidence": "Card: City Bank American Express Platinum Credit Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "The City Bank PLC",
+          "evidence": "Issuer: The City Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": "25%",
+          "evidence": "Interest Rate(Purchase & Cash Advance)5 (Annual) 25%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": "10.99%",
+          "evidence": "Balance Transfer Interest Rate (Annual) 10.99%",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "annualFee",
+          "value": "BDT 27,500",
+          "evidence": "American Express Platinum column: 1st Year Annual Fee BDT 27,500",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": "BDT 1000",
+          "evidence": "Late Payment Charge BDT 1000",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "15% VAT will be charged as applicable",
+          "evidence": "15% VAT will be charged as applicable",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "ucb-visa-platinum": {
+    "extract": {
+      "cardName": "UCB Visa Platinum Card",
+      "issuer": "United Commercial Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": null,
+      "otherFees": null,
+      "welcomeBonus": null,
+      "rewardsAndBenefits": "1 Reward Point for each BDT 50/$1 value transaction.",
+      "introductoryApr": "0% interest up to 24 months",
+      "restrictions": "Annual Fee waiver by 18 PoS/E-commerce transactions",
+      "evidence": {
+        "cardName": "UCB Visa Platinum Card",
+        "issuer": "Issuer: United Commercial Bank PLC",
+        "rewardsAndBenefits": "1 Reward Point for each BDT 50/$1 value transaction.",
+        "introductoryApr": "0% interest up to 24 months on EMI purchase at 450+ leading Merchants",
+        "restrictions": "Annual Fee waiver by 18 PoS/E-commerce transactions"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "UCB Visa Platinum Card",
+          "evidence": "UCB Visa Platinum Card",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "United Commercial Bank PLC",
+          "evidence": "Issuer: United Commercial Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "otherFees",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "1 Reward Point for each BDT 50/$1 value transaction.",
+          "evidence": "1 Reward Point for each BDT 50/$1 value transaction.",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": "0% interest up to 24 months",
+          "evidence": "0% interest up to 24 months on EMI purchase at 450+ leading Merchants",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "restrictions",
+          "value": "Annual Fee waiver by 18 PoS/E-commerce transactions",
+          "evidence": "Annual Fee waiver by 18 PoS/E-commerce transactions",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  },
+  "ucb-swadhin-account": {
+    "extract": {
+      "cardName": "UCB Swadhin Account",
+      "issuer": "United Commercial Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": "Account Maintenance Fee – Free",
+      "otherFees": null,
+      "welcomeBonus": null,
+      "rewardsAndBenefits": "Single Dual Currency Debit Card (for both the accounts ERQ & BDT Savings) – 1st Year Free",
+      "introductoryApr": null,
+      "restrictions": "Any Bangladeshi freelancer or service exporter",
+      "evidence": {
+        "cardName": "UCB Swadhin Account",
+        "issuer": "Issuer: United Commercial Bank PLC",
+        "annualFee": "Account Maintenance Fee – Free",
+        "rewardsAndBenefits": "Single Dual Currency Debit Card (for both the accounts ERQ & BDT Savings) – 1st Year Free",
+        "restrictions": "Eligibility: Any Bangladeshi freelancer or service exporter"
+      }
+    },
+    "verify": {
+      "overallStatus": "verified",
+      "fields": [
+        {
+          "field": "cardName",
+          "value": "UCB Swadhin Account",
+          "evidence": "UCB Swadhin Account",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "issuer",
+          "value": "United Commercial Bank PLC",
+          "evidence": "Issuer: United Commercial Bank PLC",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "purchaseApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "balanceTransferApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "annualFee",
+          "value": "Account Maintenance Fee – Free",
+          "evidence": "Account Maintenance Fee – Free",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "otherFees",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "welcomeBonus",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "rewardsAndBenefits",
+          "value": "Single Dual Currency Debit Card (for both the accounts ERQ & BDT Savings) – 1st Year Free",
+          "evidence": "Single Dual Currency Debit Card (for both the accounts ERQ & BDT Savings) – 1st Year Free",
+          "status": "verified",
+          "reason": "Matches the source."
+        },
+        {
+          "field": "introductoryApr",
+          "value": null,
+          "evidence": null,
+          "status": "missing",
+          "reason": "Not stated in the supplied source."
+        },
+        {
+          "field": "restrictions",
+          "value": "Any Bangladeshi freelancer or service exporter",
+          "evidence": "Eligibility: Any Bangladeshi freelancer or service exporter",
+          "status": "verified",
+          "reason": "Matches the source."
+        }
+      ],
+      "notes": "All extracted values matched the supplied source."
+    }
+  }
+}

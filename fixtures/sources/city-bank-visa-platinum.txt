@@ -1,0 +1,23 @@
+Official source snapshot
+Issuer: The City Bank PLC
+Card: City Bank Visa Platinum Credit Card
+Source: Fees & Charges of VISA Credit Cards, updated as of 11th June 2026
+Captured: 2026-11-06
+
+Visa Credit Card
+Fees & Charges of VISA Credit Cards
+Updated as of 11th June 2026
+
+Normalized excerpt of the official table (selected column: VISA Platinum)
+Annual Fee1 BDT 3,000
+Supplementary Card Annual Fee2: 1st Card Free; On-wards 50% of the primary
+Late Payment Fee BDT 850
+Over Limit Charge BDT 1250
+Interest Rate (Purchase & Cash Advance)4 (Annual) 25%
+EMI Interest Rate (Annual)5 11.99%
+Balance Transfer Fee 1% or BDT 1,000 whichever is higher
+Balance Transfer Interest Rate (Annual) 10.99%
+Minimum Due for Monthly Repayment10 BDT 500 or 3% whichever is higher
+Maximum interest free period 45 days & minimum 15 days.
+15% VAT will be charged as applicable
+VISA Platinum Card updated Annual Fee will be effective from 10th July 2026.

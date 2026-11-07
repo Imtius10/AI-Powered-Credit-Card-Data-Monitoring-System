@@ -1,0 +1,246 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "ec3dbb19-e581-4baa-800a-a816027addc9",
+      "name": "BRAC Bank Visa Infinite Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": {
+        "min": 25,
+        "max": 25
+      },
+      "balanceTransferApr": null,
+      "annualFee": 20000,
+      "welcomeBonus": {
+        "description": "Curated Exclusive Welcome Vouchers",
+        "conditions": null
+      },
+      "rewards": [
+        {
+          "category": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": null,
+      "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
+      "lastVerifiedAt": "2026-11-07T07:00:43.705Z"
+    },
+    {
+      "id": "f47d5f74-fca7-4f98-8b47-10697904b5c6",
+      "name": "BRAC Bank Visa Signature Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": {
+        "min": 25,
+        "max": 25
+      },
+      "balanceTransferApr": null,
+      "annualFee": 10000,
+      "welcomeBonus": {
+        "description": "Receive 5,000 Bonus Reward Points",
+        "conditions": "After with a minimum cumulative spend of BDT 50,000 within the first 2 months of issuance (Only newly issued credit cards)"
+      },
+      "rewards": [
+        {
+          "category": "Enjoy Welcome Vouchers from prominent dine-in",
+          "rate": "Standard"
+        },
+        {
+          "category": "Lifestyle",
+          "rate": "Standard"
+        },
+        {
+          "category": "and Healthcare Partners.",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": null,
+      "sourceUrl": "https://www.bracbank.com/en/retail/card/signature-card",
+      "lastVerifiedAt": "2026-11-07T07:00:43.706Z"
+    },
+    {
+      "id": "3aab36b3-e0d4-46c2-b3b4-056b245b14ca",
+      "name": "BRAC Bank Platinum Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": {
+        "min": 25,
+        "max": 25
+      },
+      "balanceTransferApr": null,
+      "annualFee": 5000,
+      "welcomeBonus": {
+        "description": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points. (Only for first-time activation)",
+        "conditions": null
+      },
+      "rewards": [
+        {
+          "category": "Credit Shield Insurance",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": null,
+      "sourceUrl": "https://www.bracbank.com/en/retail/card/platinum-card",
+      "lastVerifiedAt": "2026-11-07T07:00:43.707Z"
+    },
+    {
+      "id": "7acfb51b-7b8b-42ab-b845-494dcae182ce",
+      "name": "BRAC Bank Mastercard Millennial Titanium Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": {
+        "min": 25,
+        "max": 25
+      },
+      "balanceTransferApr": null,
+      "annualFee": 3000,
+      "welcomeBonus": {
+        "description": "Enjoy Welcome Vouchers from prominent dine-in and lifestyle merchants.",
+        "conditions": null
+      },
+      "rewards": [
+        {
+          "category": "Activate your Primary Credit Card through the Astha app and receive 200 bonus reward points (Only for first-time activation)",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": null,
+      "sourceUrl": "https://www.bracbank.com/en/retail/card/millennial-mastercard-titanium",
+      "lastVerifiedAt": "2026-11-07T07:00:43.707Z"
+    },
+    {
+      "id": "28b81f53-b3a6-46e6-bf37-16db765837f0",
+      "name": "EBL Visa Platinum Credit Card",
+      "issuer": "Eastern Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": 24,
+      "welcomeBonus": null,
+      "rewards": [
+        {
+          "category": "EBL SKYCOINS",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": null,
+      "sourceUrl": "https://www.ebl.com.bd/retail/eblcard/EBL-VISA-Platinum-Credit-Card",
+      "lastVerifiedAt": "2026-11-07T07:00:43.708Z"
+    },
+    {
+      "id": "85aec55d-00eb-4439-ad4c-e20222d13af8",
+      "name": "EBL Visa Gold Credit Card",
+      "issuer": "Eastern Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": 24,
+      "welcomeBonus": null,
+      "rewards": [
+        {
+          "category": "EBL ZIP",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": null,
+      "sourceUrl": "https://www.ebl.com.bd/retail/eblcard/EBL-VISA-Gold-Credit-Card",
+      "lastVerifiedAt": "2026-11-07T07:00:43.709Z"
+    },
+    {
+      "id": "e8d52051-3344-4375-be09-02ca2eb6d518",
+      "name": "EBL Visa Classic Credit Card",
+      "issuer": "Eastern Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": 24,
+      "welcomeBonus": null,
+      "rewards": [
+        {
+          "category": "EBL ZIP",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": null,
+      "sourceUrl": "https://www.ebl.com.bd/retail/eblcard/EBL-Visa-Classic-Credit-Card",
+      "lastVerifiedAt": "2026-11-07T07:00:43.709Z"
+    },
+    {
+      "id": "bf8fff6c-b4ce-47ec-8077-64c308a53423",
+      "name": "City Bank Visa Platinum Credit Card",
+      "issuer": "The City Bank PLC",
+      "purchaseApr": {
+        "min": 25,
+        "max": 25
+      },
+      "balanceTransferApr": {
+        "min": 10.99,
+        "max": 10.99
+      },
+      "annualFee": 3000,
+      "welcomeBonus": null,
+      "rewards": [],
+      "introApr": null,
+      "sourceUrl": "https://www.citybankplc.com/p/visa-platinum",
+      "lastVerifiedAt": "2026-11-07T07:00:43.709Z"
+    },
+    {
+      "id": "5ef098e3-cbe0-47ad-adfa-de66d41a4b7d",
+      "name": "City Bank Visa Infinite Credit Card",
+      "issuer": "The City Bank PLC",
+      "purchaseApr": {
+        "min": 25,
+        "max": 25
+      },
+      "balanceTransferApr": {
+        "min": 10.99,
+        "max": 10.99
+      },
+      "annualFee": 10000,
+      "welcomeBonus": null,
+      "rewards": [],
+      "introApr": null,
+      "sourceUrl": "https://www.citybankplc.com/p-ca/visa-infinite",
+      "lastVerifiedAt": "2026-11-07T07:00:43.710Z"
+    },
+    {
+      "id": "f24d41dc-2bdc-41c2-bb91-cef48808b058",
+      "name": "City Bank American Express Platinum Credit Card",
+      "issuer": "The City Bank PLC",
+      "purchaseApr": {
+        "min": 25,
+        "max": 25
+      },
+      "balanceTransferApr": {
+        "min": 10.99,
+        "max": 10.99
+      },
+      "annualFee": 27500,
+      "welcomeBonus": null,
+      "rewards": [],
+      "introApr": null,
+      "sourceUrl": "https://www.citybankplc.com/p-ca/amex-platinum-credit-card",
+      "lastVerifiedAt": "2026-11-07T07:00:43.710Z"
+    },
+    {
+      "id": "ea071c76-4235-45f9-87c5-bc0dcd0c5029",
+      "name": "UCB Visa Platinum Card",
+      "issuer": "United Commercial Bank PLC",
+      "purchaseApr": null,
+      "balanceTransferApr": null,
+      "annualFee": null,
+      "welcomeBonus": null,
+      "rewards": [
+        {
+          "category": "1 Reward Point for each BDT 50/$1 value transaction.",
+          "rate": "Standard"
+        }
+      ],
+      "introApr": {
+        "rate": "0%",
+        "durationMonths": 24
+      },
+      "sourceUrl": "https://www.ucb.com.bd/cards/choose-your-card/visa-platinum-card/",
+      "lastVerifiedAt": "2026-11-07T07:00:43.711Z"
+    }
+  ],
+  "meta": {
+    "total": 11,
+    "approved": 11,
+    "pendingReview": 0
+  }
+}

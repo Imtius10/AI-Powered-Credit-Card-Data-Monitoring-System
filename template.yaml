@@ -1,0 +1,75 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AI-Powered Credit Card Data Monitoring System - Daily AWS Lambda & EventBridge Scheduler
+
+Globals:
+  Function:
+    Timeout: 300
+    MemorySize: 512
+    Runtime: nodejs22.x
+    Architectures:
+      - x86_64
+    LoggingConfig:
+      LogFormat: JSON
+
+Resources:
+  CreditCardMonitoringFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: credit-card-data-monitor
+      Description: Daily automated AI monitoring of credit card rates, fees, and benefits
+      CodeUri: ./
+      Handler: dist/lambda.handler
+      Environment:
+        Variables:
+          NODE_ENV: production
+          SOURCE_MODE: auto
+          DATABASE_URL: !Ref DatabaseUrl
+          AI_PROVIDER: !Ref AiProvider
+          AI_BASE_URL: !Ref AiBaseUrl
+          AI_API_KEY: !Ref AiApiKey
+          AI_MODEL: !Ref AiModel
+          MONITOR_CONCURRENCY: 3
+          SCRAPER_TIMEOUT_MS: 20000
+          SCRAPER_MAX_RETRIES: 3
+      Events:
+        DailyMonitoringSchedule:
+          Type: Schedule
+          Properties:
+            Schedule: 'cron(0 2 * * ? *)'
+            Name: daily-card-monitor-schedule
+            Description: Triggers the credit card monitoring Lambda every 24 hours at 02:00 UTC
+            Enabled: true
+
+Parameters:
+  DatabaseUrl:
+    Type: String
+    Description: PostgreSQL connection string (e.g. postgresql://user:pass@rds-endpoint:5432/card_monitor)
+    NoEcho: true
+  AiProvider:
+    Type: String
+    Default: openai
+    AllowedValues:
+      - openai
+      - openai-compatible
+      - mock
+  AiBaseUrl:
+    Type: String
+    Default: https://api.openai.com/v1
+  AiApiKey:
+    Type: String
+    Description: Commercial AI API Key (leave blank if using mock)
+    NoEcho: true
+    Default: ''
+  AiModel:
+    Type: String
+    Default: gpt-4o-mini
+
+Outputs:
+  CreditCardMonitoringFunctionArn:
+    Description: Credit Card Monitoring Lambda Function ARN
+    Value: !GetAtt CreditCardMonitoringFunction.Arn
+  CreditCardMonitoringFunctionIamRole:
+    Description: IAM Role created for the Lambda function
+    Value: !GetAtt CreditCardMonitoringFunctionRole.Arn

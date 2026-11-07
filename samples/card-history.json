@@ -1,0 +1,440 @@
+{
+  "card": {
+    "id": "ec3dbb19-e581-4baa-800a-a816027addc9",
+    "slug": "brac-visa-infinite",
+    "name": "BRAC Bank Visa Infinite Credit Card",
+    "issuer": "BRAC Bank PLC"
+  },
+  "observations": [
+    {
+      "observationId": "2e740d00-14e0-4699-8fd4-97dbc14a479d",
+      "observedAt": "2026-11-07T07:00:43.731Z",
+      "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
+      "sourceMode": "fixture",
+      "verificationStatus": "verified",
+      "verification": {
+        "status": "verified",
+        "fields": [
+          {
+            "field": "cardName",
+            "value": "BRAC Bank Visa Infinite Credit Card",
+            "evidence": "Card: BRAC Bank Visa Infinite Credit Card",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "issuer",
+            "value": "BRAC Bank PLC",
+            "evidence": "Issuer: BRAC Bank PLC",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "purchaseApr",
+            "value": "25%",
+            "evidence": "Annual Interest Rates: 25%",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "balanceTransferApr",
+            "value": null,
+            "evidence": null,
+            "status": "missing",
+            "reason": "Not stated in the supplied source."
+          },
+          {
+            "field": "annualFee",
+            "value": "TK. 20,000",
+            "evidence": "Annual Fee- Primary Card: TK. 20,000",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "otherFees",
+            "value": "TK. 1,000",
+            "evidence": "Late Payment Charges: TK. 1,000",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "welcomeBonus",
+            "value": "Curated Exclusive Welcome Vouchers",
+            "evidence": "Curated Exclusive Welcome Vouchers",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "rewardsAndBenefits",
+            "value": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+            "evidence": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "introductoryApr",
+            "value": null,
+            "evidence": null,
+            "status": "missing",
+            "reason": "Not stated in the supplied source."
+          },
+          {
+            "field": "restrictions",
+            "value": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+            "evidence": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          }
+        ],
+        "notes": "Automated quote-matching verification confirmed all evidence in source content. All non-null values have verbatim source evidence and were confirmed by the verification pass.",
+        "ai": {
+          "overallStatus": "verified",
+          "fields": [
+            {
+              "field": "cardName",
+              "value": "BRAC Bank Visa Infinite Credit Card",
+              "evidence": "Card: BRAC Bank Visa Infinite Credit Card",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "issuer",
+              "value": "BRAC Bank PLC",
+              "evidence": "Issuer: BRAC Bank PLC",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "purchaseApr",
+              "value": "25%",
+              "evidence": "Annual Interest Rates: 25%",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "balanceTransferApr",
+              "value": null,
+              "evidence": null,
+              "status": "missing",
+              "reason": null
+            },
+            {
+              "field": "annualFee",
+              "value": "TK. 20,000",
+              "evidence": "Annual Fee- Primary Card: TK. 20,000",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "otherFees",
+              "value": "TK. 1,000",
+              "evidence": "Late Payment Charges: TK. 1,000",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "welcomeBonus",
+              "value": "Curated Exclusive Welcome Vouchers",
+              "evidence": "Curated Exclusive Welcome Vouchers",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "rewardsAndBenefits",
+              "value": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+              "evidence": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "introductoryApr",
+              "value": null,
+              "evidence": null,
+              "status": "missing",
+              "reason": null
+            },
+            {
+              "field": "restrictions",
+              "value": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+              "evidence": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+              "status": "verified",
+              "reason": null
+            }
+          ],
+          "notes": "Automated quote-matching verification confirmed all evidence in source content."
+        },
+        "usage": {
+          "extraction": {
+            "provider": "mock",
+            "model": "mock-fixture",
+            "inputTokens": 754,
+            "outputTokens": 247,
+            "estimatedCostUsd": 0,
+            "durationMs": 0
+          },
+          "verification": {
+            "provider": "deterministic-verifier",
+            "model": "source-quote-matcher",
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "estimatedCostUsd": 0,
+            "durationMs": 1
+          }
+        }
+      },
+      "changes": [
+        {
+          "changeId": "e4087cb7-1505-4023-b46b-96d9e37a27c9",
+          "field": "cardName",
+          "oldValue": null,
+          "newValue": "BRAC Bank Visa Infinite Credit Card",
+          "status": "INITIAL",
+          "evidence": "Card: BRAC Bank Visa Infinite Credit Card"
+        },
+        {
+          "changeId": "8a527e95-ae3c-4509-aae0-709388c50867",
+          "field": "issuer",
+          "oldValue": null,
+          "newValue": "BRAC Bank PLC",
+          "status": "INITIAL",
+          "evidence": "Issuer: BRAC Bank PLC"
+        },
+        {
+          "changeId": "e8da03f2-7937-4d25-bb56-372af94c265e",
+          "field": "purchaseApr",
+          "oldValue": null,
+          "newValue": "25%",
+          "status": "INITIAL",
+          "evidence": "Annual Interest Rates: 25%"
+        },
+        {
+          "changeId": "8cdb7897-e2ad-4197-ac8b-72d7bc75d3a5",
+          "field": "annualFee",
+          "oldValue": null,
+          "newValue": "TK. 20,000",
+          "status": "INITIAL",
+          "evidence": "Annual Fee- Primary Card: TK. 20,000"
+        },
+        {
+          "changeId": "d1605ee5-4a1a-4c91-975e-5b5d984e164f",
+          "field": "otherFees",
+          "oldValue": null,
+          "newValue": "TK. 1,000",
+          "status": "INITIAL",
+          "evidence": "Late Payment Charges: TK. 1,000"
+        },
+        {
+          "changeId": "b39f0706-2fb8-4236-b4a0-37fcb3b0d2eb",
+          "field": "welcomeBonus",
+          "oldValue": null,
+          "newValue": "Curated Exclusive Welcome Vouchers",
+          "status": "INITIAL",
+          "evidence": "Curated Exclusive Welcome Vouchers"
+        },
+        {
+          "changeId": "70449e8a-01a3-4dff-859c-5c126992e759",
+          "field": "rewardsAndBenefits",
+          "oldValue": null,
+          "newValue": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+          "status": "INITIAL",
+          "evidence": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card"
+        },
+        {
+          "changeId": "eb6f53a3-16c8-4d1f-8d8f-c0bad5dfe03e",
+          "field": "restrictions",
+          "oldValue": null,
+          "newValue": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+          "status": "INITIAL",
+          "evidence": "Please note, the Visa Infinite credit card is an Invite-only credit card"
+        }
+      ]
+    },
+    {
+      "observationId": "c9762417-233c-4add-9534-e1fda9fb5b5c",
+      "observedAt": "2026-11-07T07:00:43.731Z",
+      "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
+      "sourceMode": "fixture",
+      "verificationStatus": "verified",
+      "verification": {
+        "status": "verified",
+        "fields": [
+          {
+            "field": "cardName",
+            "value": "BRAC Bank Visa Infinite Credit Card",
+            "evidence": "Card: BRAC Bank Visa Infinite Credit Card",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "issuer",
+            "value": "BRAC Bank PLC",
+            "evidence": "Issuer: BRAC Bank PLC",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "purchaseApr",
+            "value": "25%",
+            "evidence": "Annual Interest Rates: 25%",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "balanceTransferApr",
+            "value": null,
+            "evidence": null,
+            "status": "missing",
+            "reason": "Not stated in the supplied source."
+          },
+          {
+            "field": "annualFee",
+            "value": "TK. 22,000",
+            "evidence": "Annual Fee- Primary Card: TK. 22,000",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "otherFees",
+            "value": "TK. 1,000",
+            "evidence": "Late Payment Charges: TK. 1,000",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "welcomeBonus",
+            "value": "Curated Exclusive Welcome Vouchers",
+            "evidence": "Curated Exclusive Welcome Vouchers",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "rewardsAndBenefits",
+            "value": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+            "evidence": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          },
+          {
+            "field": "introductoryApr",
+            "value": null,
+            "evidence": null,
+            "status": "missing",
+            "reason": "Not stated in the supplied source."
+          },
+          {
+            "field": "restrictions",
+            "value": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+            "evidence": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+            "status": "verified",
+            "reason": "Confirmed against verbatim source evidence."
+          }
+        ],
+        "notes": "Automated quote-matching verification confirmed all evidence in source content. All non-null values have verbatim source evidence and were confirmed by the verification pass.",
+        "ai": {
+          "overallStatus": "verified",
+          "fields": [
+            {
+              "field": "cardName",
+              "value": "BRAC Bank Visa Infinite Credit Card",
+              "evidence": "Card: BRAC Bank Visa Infinite Credit Card",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "issuer",
+              "value": "BRAC Bank PLC",
+              "evidence": "Issuer: BRAC Bank PLC",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "purchaseApr",
+              "value": "25%",
+              "evidence": "Annual Interest Rates: 25%",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "balanceTransferApr",
+              "value": null,
+              "evidence": null,
+              "status": "missing",
+              "reason": null
+            },
+            {
+              "field": "annualFee",
+              "value": "TK. 22,000",
+              "evidence": "Annual Fee- Primary Card: TK. 22,000",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "otherFees",
+              "value": "TK. 1,000",
+              "evidence": "Late Payment Charges: TK. 1,000",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "welcomeBonus",
+              "value": "Curated Exclusive Welcome Vouchers",
+              "evidence": "Curated Exclusive Welcome Vouchers",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "rewardsAndBenefits",
+              "value": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+              "evidence": "LUXURYWITHOUT LIMITS Unlock unmatched privileges and limitless rewards with BRAC Bank VISA Infinite Credit Card",
+              "status": "verified",
+              "reason": null
+            },
+            {
+              "field": "introductoryApr",
+              "value": null,
+              "evidence": null,
+              "status": "missing",
+              "reason": null
+            },
+            {
+              "field": "restrictions",
+              "value": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+              "evidence": "Please note, the Visa Infinite credit card is an Invite-only credit card",
+              "status": "verified",
+              "reason": null
+            }
+          ],
+          "notes": "Automated quote-matching verification confirmed all evidence in source content."
+        },
+        "usage": {
+          "extraction": {
+            "provider": "mock",
+            "model": "mock-fixture",
+            "inputTokens": 754,
+            "outputTokens": 247,
+            "estimatedCostUsd": 0,
+            "durationMs": 1
+          },
+          "verification": {
+            "provider": "deterministic-verifier",
+            "model": "source-quote-matcher",
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "estimatedCostUsd": 0,
+            "durationMs": 1
+          }
+        }
+      },
+      "changes": [
+        {
+          "changeId": "8dd7c845-8d2d-42ba-9952-93f3c3d22436",
+          "field": "annualFee",
+          "oldValue": "TK. 20,000",
+          "newValue": "TK. 22,000",
+          "status": "PENDING_REVIEW",
+          "evidence": "Annual Fee- Primary Card: TK. 22,000"
+        }
+      ]
+    }
+  ]
+}

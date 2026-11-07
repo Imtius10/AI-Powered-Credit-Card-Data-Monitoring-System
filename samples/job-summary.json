@@ -1,0 +1,127 @@
+{
+  "jobRunId": "62c1f978-a152-4ff4-b0f8-2d0994500464",
+  "status": "succeeded",
+  "startedAt": "2026-11-07T07:00:43.699Z",
+  "finishedAt": "2026-11-07T07:00:43.711Z",
+  "durationMs": 12,
+  "cardsProcessed": 11,
+  "cardsFailed": 0,
+  "changesDetected": 0,
+  "cardsVerified": 11,
+  "cardsPendingReview": 0,
+  "inputTokens": 7996,
+  "outputTokens": 2254,
+  "estimatedCostUsd": 0,
+  "results": [
+    {
+      "cardId": "ec3dbb19-e581-4baa-800a-a816027addc9",
+      "slug": "brac-visa-infinite",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 6,
+      "inputTokens": 754,
+      "outputTokens": 247,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "f47d5f74-fca7-4f98-8b47-10697904b5c6",
+      "slug": "brac-visa-signature",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 1,
+      "inputTokens": 711,
+      "outputTokens": 300,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "3aab36b3-e0d4-46c2-b3b4-056b245b14ca",
+      "slug": "brac-visa-platinum",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 1,
+      "inputTokens": 645,
+      "outputTokens": 235,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "7acfb51b-7b8b-42ab-b845-494dcae182ce",
+      "slug": "brac-mastercard-millennial-titanium",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 0,
+      "inputTokens": 702,
+      "outputTokens": 281,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "28b81f53-b3a6-46e6-bf37-16db765837f0",
+      "slug": "ebl-visa-platinum",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 1,
+      "inputTokens": 788,
+      "outputTokens": 154,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "85aec55d-00eb-4439-ad4c-e20222d13af8",
+      "slug": "ebl-visa-gold",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 1,
+      "inputTokens": 801,
+      "outputTokens": 167,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "e8d52051-3344-4375-be09-02ca2eb6d518",
+      "slug": "ebl-visa-classic",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 0,
+      "inputTokens": 732,
+      "outputTokens": 169,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "bf8fff6c-b4ce-47ec-8077-64c308a53423",
+      "slug": "city-bank-visa-platinum",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 0,
+      "inputTokens": 711,
+      "outputTokens": 169,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "5ef098e3-cbe0-47ad-adfa-de66d41a4b7d",
+      "slug": "city-bank-visa-infinite",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 1,
+      "inputTokens": 710,
+      "outputTokens": 170,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "f24d41dc-2bdc-41c2-bb91-cef48808b058",
+      "slug": "city-bank-amex-platinum",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 0,
+      "inputTokens": 719,
+      "outputTokens": 187,
+      "estimatedCostUsd": 0
+    },
+    {
+      "cardId": "ea071c76-4235-45f9-87c5-bc0dcd0c5029",
+      "slug": "ucb-visa-platinum",
+      "status": "verified",
+      "changesDetected": 0,
+      "durationMs": 1,
+      "inputTokens": 723,
+      "outputTokens": 175,
+      "estimatedCostUsd": 0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+Official source snapshot
+Issuer: The City Bank PLC
+Card: City Bank American Express Platinum Credit Card
+Source: Fees & Charges of American Express Credit Card, updated as of 1st June 2026
+Captured: 2026-11-06
+
+All American Express Credit Cards
+Fees & Charges of American Express Credit Card
+Updated as of 1st June 2026
+
+Normalized excerpt of the official table (selected column: American Express Platinum)
+American Express Platinum column: 1st Year Annual Fee BDT 27,500
+2nd Year onwards Annual Fee BDT 27,500
+Supplementary Card Annual Fee2 (1st Card) Free
+Late Payment Charge BDT 1000
+Over Limit Charge BDT 1500
+Interest Rate(Purchase & Cash Advance)5 (Annual) 25%
+EMI Interest Rate6 (Annual) 11.99%
+Balance Transfer Fee 1%
+Balance Transfer Interest Rate (Annual) 10.99%
+Minimum Due for Monthly Repayment10 BDT 500 or 3% whichever is higher
+Maximum interest free period 45 days & minimum 15 days.
+15% VAT will be charged as applicable

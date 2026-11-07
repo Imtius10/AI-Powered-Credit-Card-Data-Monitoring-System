@@ -1,0 +1,210 @@
+{
+  "info": {
+    "_postman_id": "c1f7a4b0-9b62-4f81-8b29-12f84b6d09e1",
+    "name": "Credit Card AI Monitor API",
+    "description": "API collection for testing the AI-Powered Credit Card Data Monitoring System.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api",
+      "type": "string"
+    },
+    {
+      "key": "cardId",
+      "value": "a6a7d1be-8885-44ca-9dab-9aa655d1580e",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health / Root Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}",
+          "host": ["{{baseUrl}}"]
+        },
+        "description": "Verifies that the server is up and running."
+      },
+      "response": []
+    },
+    {
+      "name": "1. Get Approved Cards",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Returns success and meta envelope\", function () {",
+              "    var json = pm.response.json();",
+              "    pm.expect(json.success).to.be.true;",
+              "    pm.expect(json).to.have.property('data');",
+              "    pm.expect(json.data).to.be.an('array');",
+              "    pm.expect(json).to.have.property('meta');",
+              "    if (json.data.length > 0) {",
+              "        pm.collectionVariables.set('cardId', json.data[0].id);",
+              "    }",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/cards",
+          "host": ["{{baseUrl}}"],
+          "path": ["cards"]
+        },
+        "description": "Returns the latest verified and approved credit card data for all active cards."
+      },
+      "response": []
+    },
+    {
+      "name": "2. Get Card Change History",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Contains card and observations\", function () {",
+              "    var json = pm.response.json();",
+              "    pm.expect(json).to.have.property('card');",
+              "    pm.expect(json).to.have.property('observations');",
+              "    pm.expect(json.observations).to.be.an('array');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/cards/{{cardId}}/history",
+          "host": ["{{baseUrl}}"],
+          "path": ["cards", "{{cardId}}", "history"]
+        },
+        "description": "Returns chronological observations, verification status, and detected field changes with verbatim evidence for a card."
+      },
+      "response": []
+    },
+    {
+      "name": "3. Trigger Daily Monitoring Job",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Returns job summary\", function () {",
+              "    var json = pm.response.json();",
+              "    pm.expect(json).to.have.property('data');",
+              "    pm.expect(json.data).to.have.property('jobRunId');",
+              "    pm.expect(json.data).to.have.property('status');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/monitoring/run",
+          "host": ["{{baseUrl}}"],
+          "path": ["monitoring", "run"]
+        },
+        "description": "Triggers the 24-hour monitoring workflow on demand."
+      },
+      "response": []
+    },
+    {
+      "name": "4. Error Test - Invalid UUID (400)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 400\", function () {",
+              "    pm.response.to.have.status(400);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/cards/not-a-valid-uuid/history",
+          "host": ["{{baseUrl}}"],
+          "path": ["cards", "not-a-valid-uuid", "history"]
+        },
+        "description": "Tests validation pipe rejection for non-UUID parameter."
+      },
+      "response": []
+    },
+    {
+      "name": "5. Error Test - Non-Existent Card (404)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 404\", function () {",
+              "    pm.response.to.have.status(404);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/cards/00000000-0000-0000-0000-000000000000/history",
+          "host": ["{{baseUrl}}"],
+          "path": ["cards", "00000000-0000-0000-0000-000000000000", "history"]
+        },
+        "description": "Tests 404 response when a card UUID is syntactically valid but does not exist in the database."
+      },
+      "response": []
+    }
+  ]
+}
