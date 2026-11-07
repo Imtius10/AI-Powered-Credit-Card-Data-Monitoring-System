@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-1. [Executive Summary (Explain Like I'm 5)](#1-executive-summary-explain-like-im-5)
+1. [Executive Overview & Plain-English Architecture](#1-executive-overview--plain-english-architecture)
 2. [Why Traditional Solutions Fail](#2-why-traditional-solutions-fail)
 3. [The Core Concept: Scraper + AI + Rule Engine Working Together](#3-the-core-concept-scraper--ai--rule-engine-working-together)
 4. [Step-by-Step Data Journey: How a Credit Card Is Processed](#4-step-by-step-data-journey-how-a-credit-card-is-processed)
@@ -24,7 +24,7 @@
 
 ---
 
-## 1. Executive Summary (Explain Like I'm 5)
+## 1. Executive Overview & Plain-English Architecture
 
 Imagine you run a comparison website for credit cards. Every day, banks quietly adjust their interest rates, waive annual fees, or introduce new airport lounge perks.
 

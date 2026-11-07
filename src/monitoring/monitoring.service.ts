@@ -105,6 +105,10 @@ export class MonitoringService {
     return summary;
   }
 
+  async getLatestJobRun() {
+    return this.cardsRepository.getLatestJobRun();
+  }
+
   async processCard(card: CardSource): Promise<CardProcessingResult> {
     const startedAt = Date.now();
     let source: CardSourceContent | null = null;

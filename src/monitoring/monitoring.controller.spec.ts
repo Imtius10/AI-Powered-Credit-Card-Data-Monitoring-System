@@ -12,6 +12,7 @@ describe('MonitoringController', () => {
   beforeEach(async () => {
     service = {
       runDailyJob: jest.fn(),
+      getLatestJobRun: jest.fn(),
     };
 
     const module: TestingModule = await Test.createTestingModule({
@@ -49,5 +50,13 @@ describe('MonitoringController', () => {
     const result = await controller.runDailyJob();
     expect(result).toEqual({ data: mockSummary });
     expect(service.runDailyJob).toHaveBeenCalledTimes(1);
+  });
+
+  it('GET /monitoring/status returns latest job run info', async () => {
+    service.getLatestJobRun.mockResolvedValue({ id: 'job-1', status: 'succeeded' });
+
+    const result = await controller.getStatus();
+    expect(result).toEqual({ success: true, data: { id: 'job-1', status: 'succeeded' } });
+    expect(service.getLatestJobRun).toHaveBeenCalledTimes(1);
   });
 });
