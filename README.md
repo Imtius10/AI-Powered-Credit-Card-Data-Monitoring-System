@@ -396,14 +396,49 @@ All data is stored in **PostgreSQL**. The database is designed for full accounta
 
 ---
 
-## 8. Public REST API & Sample Responses
+## 8. Public REST API & Endpoints Reference
 
-The system provides a clean, developer-friendly REST API for web apps, mobile apps, and partner integrations.
+The system provides a clean, developer-friendly REST API for web apps, mobile apps, and partner integrations. All routes are prefixed with `/api`.
 
-### Endpoint 1: `GET /api/cards`
-Returns all active credit cards with verified terms, parsed numeric APR ranges, and a metadata summary.
+### Endpoints Quick Reference
 
-#### Sample Response:
+| Method | Endpoint | Description | Primary Use Case |
+|---|---|---|---|
+| `GET` | `/api` | Server health & readiness check | Uptime monitoring & load balancers |
+| `GET` | `/api/cards` | Approved credit cards with parsed APR ranges & meta | Front-end card catalog & comparison tools |
+| `GET` | `/api/cards/:id/history` | Complete observation timeline & changes (UUID or slug) | Audit trail, compliance & fee change logs |
+| `GET` | `/api/cards/approved` | Raw approved card values & verification timestamps | Admin dashboard & diagnostic review |
+| `GET` | `/api/monitoring/status` | Summary & telemetry of latest daily monitoring job | Operational monitoring & job status checks |
+| `POST` | `/api/monitoring/run` | Triggers the daily monitoring workflow on demand | Manual admin sync & cron triggers |
+
+---
+
+### Endpoint 1: Server Health Check
+- **Route**: `GET /api`
+- **Purpose**: Verifies that the NestJS server is online, connected, and ready to receive requests.
+
+#### Test with cURL:
+```bash
+curl http://localhost:3000/api
+```
+
+#### Response `200 OK`:
+```text
+Hello World!
+```
+
+---
+
+### Endpoint 2: Approved Cards Catalog
+- **Route**: `GET /api/cards`
+- **Purpose**: Returns all active credit cards with verified terms, parsed numeric APR ranges (`{ min, max }`), numerical annual fees, parsed rewards, welcome bonuses, and a metadata envelope (`total`, `approved`, `pendingReview`).
+
+#### Test with cURL:
+```bash
+curl http://localhost:3000/api/cards
+```
+
+#### Sample Response `200 OK`:
 ```json
 {
   "success": true,
@@ -443,10 +478,20 @@ Returns all active credit cards with verified terms, parsed numeric APR ranges, 
 
 ---
 
-### Endpoint 2: `GET /api/cards/:id/history`
-Returns the complete chronological history of observations and detected term changes for a specific card (supports UUID or slug, e.g. `brac-visa-infinite`).
+### Endpoint 3: Card Observation History & Audit Trail
+- **Route**: `GET /api/cards/:id/history`
+- **Purpose**: Returns the complete chronological history of monitoring observations, AI verification statuses, and field-level changes for a card. Supports both **UUID** and **card slug** (e.g. `brac-visa-infinite`).
 
-#### Sample Response:
+#### Test with cURL:
+```bash
+# Query by slug:
+curl http://localhost:3000/api/cards/brac-visa-infinite/history
+
+# Or query by UUID:
+curl http://localhost:3000/api/cards/ec3dbb19-e581-4baa-800a-a816027addc9/history
+```
+
+#### Sample Response `200 OK`:
 ```json
 {
   "card": {
@@ -483,25 +528,129 @@ Returns the complete chronological history of observations and detected term cha
 
 ---
 
-### Endpoint 3: `POST /api/monitoring/run`
-Triggers the daily monitoring workflow on demand and returns a job execution summary.
+### Endpoint 4: Approved Cards Diagnostic View
+- **Route**: `GET /api/cards/approved`
+- **Purpose**: Diagnostic endpoint returning raw card values, approval statuses (`APPROVED` vs `PENDING_INITIAL_REVIEW`), observation IDs, and exact update timestamps.
 
-#### Sample Response:
+#### Test with cURL:
+```bash
+curl http://localhost:3000/api/cards/approved
+```
+
+#### Sample Response `200 OK`:
+```json
+[
+  {
+    "id": "ec3dbb19-e581-4baa-800a-a816027addc9",
+    "slug": "brac-visa-infinite",
+    "name": "BRAC Bank Visa Infinite Credit Card",
+    "issuer": "BRAC Bank PLC",
+    "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
+    "approvalStatus": "APPROVED",
+    "approved": {
+      "cardName": "BRAC Bank Visa Infinite Credit Card",
+      "issuer": "BRAC Bank PLC",
+      "purchaseApr": "25%",
+      "balanceTransferApr": null,
+      "annualFee": "TK. 20,000",
+      "otherFees": "Late Payment: TK. 600, Over Limit: TK. 1,000",
+      "welcomeBonus": "Curated Exclusive Welcome Vouchers",
+      "rewardsAndBenefits": "Luxury Privileges and Lounge Access",
+      "introductoryApr": null,
+      "restrictions": null,
+      "sourceUrl": "https://www.bracbank.com/en/retail/card/infinite-card",
+      "observationId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "verifiedAt": "2026-11-07T07:00:43.705Z",
+      "updatedAt": "2026-11-07T07:00:43.705Z"
+    }
+  }
+]
+```
+
+---
+
+### Endpoint 5: Monitoring Job Status
+- **Route**: `GET /api/monitoring/status` (or `GET /api/monitoring/latest`)
+- **Purpose**: Returns execution metrics and summary of the most recently executed monitoring job run, including card counts, changes detected, and token consumption.
+
+#### Test with cURL:
+```bash
+curl http://localhost:3000/api/monitoring/status
+```
+
+#### Sample Response `200 OK`:
 ```json
 {
-  "jobRunId": "5e1a3b8c-9d2e-4f1a-b3c5-7d9e1f2a3b4c",
-  "status": "succeeded",
-  "startedAt": "2026-11-07T07:00:00.000Z",
-  "finishedAt": "2026-11-07T07:01:15.000Z",
-  "durationMs": 75000,
-  "cardsProcessed": 11,
-  "cardsFailed": 0,
-  "changesDetected": 0,
-  "cardsVerified": 11,
-  "cardsPendingReview": 0,
-  "inputTokens": 13420,
-  "outputTokens": 4510,
-  "estimatedCostUsd": 0.0047
+  "success": true,
+  "data": {
+    "id": "5e1a3b8c-9d2e-4f1a-b3c5-7d9e1f2a3b4c",
+    "startedAt": "2026-11-07T07:00:00.000Z",
+    "finishedAt": "2026-11-07T07:01:15.000Z",
+    "status": "succeeded",
+    "cardsProcessed": 11,
+    "cardsFailed": 0,
+    "changesDetected": 0,
+    "summary": {
+      "jobRunId": "5e1a3b8c-9d2e-4f1a-b3c5-7d9e1f2a3b4c",
+      "status": "succeeded",
+      "startedAt": "2026-11-07T07:00:00.000Z",
+      "finishedAt": "2026-11-07T07:01:15.000Z",
+      "durationMs": 75000,
+      "cardsProcessed": 11,
+      "cardsFailed": 0,
+      "changesDetected": 0,
+      "cardsVerified": 11,
+      "cardsPendingReview": 0,
+      "inputTokens": 13420,
+      "outputTokens": 4510,
+      "estimatedCostUsd": 0.0047
+    },
+    "error": null
+  }
+}
+```
+
+---
+
+### Endpoint 6: Trigger Monitoring Job On Demand
+- **Route**: `POST /api/monitoring/run`
+- **Purpose**: Immediately initiates the automated monitoring job across all enabled cards, executing scraping, change detection, AI extraction, and verification.
+
+#### Test with cURL:
+```bash
+curl -X POST http://localhost:3000/api/monitoring/run
+```
+
+#### Sample Response `200 OK`:
+```json
+{
+  "data": {
+    "jobRunId": "5e1a3b8c-9d2e-4f1a-b3c5-7d9e1f2a3b4c",
+    "status": "succeeded",
+    "startedAt": "2026-11-07T07:00:00.000Z",
+    "finishedAt": "2026-11-07T07:01:15.000Z",
+    "durationMs": 75000,
+    "cardsProcessed": 11,
+    "cardsFailed": 0,
+    "changesDetected": 0,
+    "cardsVerified": 11,
+    "cardsPendingReview": 0,
+    "inputTokens": 13420,
+    "outputTokens": 4510,
+    "estimatedCostUsd": 0.0047,
+    "results": [
+      {
+        "cardId": "ec3dbb19-e581-4baa-800a-a816027addc9",
+        "slug": "brac-visa-infinite",
+        "status": "verified",
+        "changesDetected": 0,
+        "durationMs": 3210,
+        "inputTokens": 1220,
+        "outputTokens": 410,
+        "estimatedCostUsd": 0.0004
+      }
+    ]
+  }
 }
 ```
 
@@ -720,19 +869,25 @@ Server will start on `http://localhost:3000`.
 
 ### Step 6: Test Endpoints
 
-Import [`postman_collection.json`](file:///home/imtius/card_ai_automation/postman_collection.json) into Postman, or use `curl`:
+Import [`postman_collection.json`](file:///home/imtius/card_ai_automation/postman_collection.json) into Postman, or test all endpoints directly with `curl`:
 
 ```bash
 # 1. Health check
 curl http://localhost:3000/api
 
-# 2. Get all verified cards
+# 2. Get all verified cards (public catalog with parsed rates & metadata)
 curl http://localhost:3000/api/cards
 
-# 3. View change history for BRAC Visa Infinite
+# 3. View change history & audit trail for a card (by slug or UUID)
 curl http://localhost:3000/api/cards/brac-visa-infinite/history
 
-# 4. Trigger an on-demand monitoring run
+# 4. View raw approved cards diagnostic list
+curl http://localhost:3000/api/cards/approved
+
+# 5. Check latest monitoring job status & telemetry
+curl http://localhost:3000/api/monitoring/status
+
+# 6. Trigger an on-demand monitoring run
 curl -X POST http://localhost:3000/api/monitoring/run
 ```
 
