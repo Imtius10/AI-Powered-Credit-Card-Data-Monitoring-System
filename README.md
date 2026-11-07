@@ -775,19 +775,3 @@ The system seeds and monitors **12 real banking products from 4 major issuers**:
 | **United Commercial Bank PLC** | UCB Visa Platinum Card | [UCB Platinum](https://www.ucb.com.bd/cards/choose-your-card/visa-platinum-card/) | [UCB Cards Portal](https://www.ucb.com.bd/cards/) |
 | **United Commercial Bank PLC** | UCB Swadhin Account (foreign-currency savings) | [UCB Swadhin](https://www.ucb.com.bd/banking/retail-banking/ucb-swadhin-account/) | [UCB Retail Banking](https://www.ucb.com.bd/banking/retail-banking/) |
 
----
-
-## Deliverables Checklist
-
-- [x] **Source Code**: Clean, modular NestJS + TypeScript architecture ([`src/`](file:///home/imtius/card_ai_automation/src/)).
-- [x] **Working Lambda Function**: Serverless handler with warm context caching in [`src/lambda.ts`](file:///home/imtius/card_ai_automation/src/lambda.ts).
-- [x] **EventBridge SAM Config**: CloudFormation infrastructure with daily cron `cron(0 2 * * ? *)` in [`template.yaml`](file:///home/imtius/card_ai_automation/template.yaml).
-- [x] **Database Schema**: PostgreSQL DDL with relational integrity, indices, and audit tables in [`src/database/schema.sql`](file:///home/imtius/card_ai_automation/src/database/schema.sql).
-- [x] **Dual-Source Scraper**: Smart marketing page + Schedule of Charges PDF aggregator with Next.js RSC decoding in [`src/scraper/`](file:///home/imtius/card_ai_automation/src/scraper/).
-- [x] **AI Extraction & Verification**: Grounded JSON schema prompting with resilient parser in [`src/ai/`](file:///home/imtius/card_ai_automation/src/ai/).
-- [x] **Deterministic Verifier**: Verbatim proof checking and honest null preservation in [`src/monitoring/verification.service.ts`](file:///home/imtius/card_ai_automation/src/monitoring/verification.service.ts).
-- [x] **Change Detection & Audit Trail**: Field-level historical tracking and review quarantine in [`src/monitoring/change-detection.service.ts`](file:///home/imtius/card_ai_automation/src/monitoring/change-detection.service.ts).
-- [x] **Automated Tests**: 100% pass rate across 12 test suites (40 tests) + 2 E2E suites.
-- [x] **Postman Collection**: Complete API test suite in [`postman_collection.json`](file:///home/imtius/card_ai_automation/postman_collection.json).
-- [x] **Sample JSON Outputs**: Exported API payloads and job summaries in [`samples/`](file:///home/imtius/card_ai_automation/samples/).
-- [x] **Comprehensive Documentation**: Detailed non-technical and technical README with cost modeling, architecture diagrams, and scaling strategy.
